@@ -1,0 +1,24 @@
+{
+	"name": "check-image-quality",
+	"author": {
+		"name": "Marcos Pulgar",
+		"email": "marcos.pulgar.a@gmail.com"
+	},
+	"version": "1.0.0",
+	"main": "build/index.js",
+	"types": "build/index.d.ts",
+	"devDependencies": {
+		"@types/jest": "^27.5.2",
+		"@types/node": "^22.5.5",
+		"jest": "^27.5.1",
+		"jest-canvas-mock": "^2.5.2",
+		"ts-jest": "^27.1.5",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.5.0"
+	},
+	"scripts": {
+		"test": "jest",
+		"coverage": "jest --coverage",
+		"build": "tsc -p tsconfig.json"
+	}
+}

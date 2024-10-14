@@ -1,0 +1,16 @@
+image:
+  name: 779018688835.dkr.ecr.us-east-1.amazonaws.com/builder-node18-lib:prod
+  aws:
+    access-key: $AWS_BITBUCKET_ACCESS_KEY
+    secret-key: $AWS_BITBUCKET_SECRET_KEY
+
+pipelines:
+  branches:
+    develop:
+      - step:
+          script:
+            - /build
+    master:
+      - step:
+          script:
+            - /build
